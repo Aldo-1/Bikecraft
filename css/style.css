@@ -10,6 +10,7 @@ p {
 img {
   display: block;
 }
+
 .btn {
   border: 3px solid #fec63e;
   padding: 10px 30px;
@@ -47,6 +48,25 @@ img {
   background: black;
   margin: 8px auto;
 }
+.subtitulo-interno {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.subtitulo-interno::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 10px 0;
+}
 /* Header */
 .header {
   position: fixed;
@@ -56,7 +76,9 @@ img {
   padding: 15px 0;
   z-index: 10;
 }
-
+.header_menu ul li a.ativo {
+  color: white;
+}
 .header_menu {
   text-align: right;
   text-transform: uppercase;
@@ -122,7 +144,30 @@ img {
   font-size: 14px;
   letter-spacing: 0.1em;
 }
+/* Introducao interna */
+.introducao-interna {
+  width: 100%;
+  margin-top: 92px;
+  height: 160px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+}
+.introducao-interna h1 {
+  font-size: 36px;
+  line-height: 60px;
 
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.introducao-interna h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: white;
+  margin: 6px auto 10px auto;
+}
 /* Produtos */
 .produtos {
   padding: 60px 0;
@@ -197,6 +242,7 @@ img {
 
 .qualidade {
   padding: 60px 0;
+  overflow: hidden;
 }
 .qualidade::after {
   content: "";
@@ -235,4 +281,77 @@ img {
   height: 3px;
   background: black;
   margin: 6px auto;
+}
+
+/* quebra */
+
+.quebra {
+  width: 100%;
+  background: url("../img/bg-footer.jpg") no-repeat center;
+  background-size: cover;
+  height: 200px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.quebra .quote-externo {
+  max-width: 400px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #fec63e;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.footer h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fec63e;
+  margin: 6px 0 10px 0;
+}
+
+.footer_historia {
+  padding-right: 40px;
+}
+
+.footer_contato ul li {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.footer_redes ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer_redes ul li a {
+  border: 3px solid #fec63e;
+  display: block;
+  padding: 10px;
+}
+
+.footer_redes ul li a:hover {
+  border: 3px solid #fff;
+}
+
+.copy {
+  width: 100%;
+  background: #fec63e;
+  padding: 20px;
 }
