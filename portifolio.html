@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/portifolio.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsivo.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -31,14 +34,22 @@
     <!-- Intro -->
     <section class="introducao-interna interna_portifolio">
       <div class="container">
-        <h1>PORTFÓLIO</h1>
-        <p>
+        <h1 data-anime="400" class="fadeInDown">PORTFÓLIO</h1>
+        <p data-anime="800" class="fadeInDown">
           conheça os projetos que amamos mostrar
         </p>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container fadeInDown" data-slide="quote" data-anime="1200">
+      <blockquote class="quote_clientes">
+        <p>
+          “Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez
+          foi intensificar o meu amor por esta atividade. Recomendo à todos que
+          amo.”
+        </p>
+        <cite>Barbara moss</cite>
+      </blockquote>
       <blockquote class="quote_clientes">
         <p>
           “Aqueles que ainda não possuem uma Bikcraft, não sabem o que estão
@@ -47,11 +58,19 @@
         </p>
         <cite>Bernado</cite>
       </blockquote>
+      <blockquote class="quote_clientes">
+        <p>
+          “Nada melhor do que dar um rolê com a minha Bikcraft na orla. Essa é a
+          minha companheira mais fiel, nunca me traiu e está sempre a minha
+          disposição.”
+        </p>
+        <cite>Jhony Rato</cite>
+      </blockquote>
     </section>
 
     <!-- Portifolio-->
     <section class="portifolio">
-      <div class="container">
+      <div class="container" data-slide="portfolio">
         <ul class="portifolio_lista">
           <li class="grid-8">
             <img src="img/portfolio/retro.jpg" alt="bikecraft retro" />
@@ -59,6 +78,18 @@
           <li class="grid-8">
             <img src="img/portfolio/passeio.jpg" alt="bikecraft passeio" />
           </li>
+          <li class="grid-16">
+            <img src="img/portfolio/esporte.jpg" alt="bikecraft esporte" />
+          </li>
+        </ul>
+        <ul class="portifolio_lista">
+          <li class="grid-8">
+            <img src="img/portfolio/passeio.jpg" alt="bikecraft passeio" />
+          </li>
+          <li class="grid-8">
+            <img src="img/portfolio/retro.jpg" alt="bikecraft retro" />
+          </li>
+
           <li class="grid-16">
             <img src="img/portfolio/esporte.jpg" alt="bikecraft esporte" />
           </li>
@@ -128,5 +159,8 @@
         </div>
       </div>
     </footer>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/simple-slide.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
