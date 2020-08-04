@@ -9,6 +9,7 @@ p {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 .btn {
@@ -20,6 +21,7 @@ img {
   line-height: 20px;
   letter-spacing: 0.1em;
   font-weight: bold;
+  background: none;
 }
 .btn:hover {
   color: #fff;
